@@ -67,7 +67,8 @@ const Comic: React.FC = () => {
             <div className="flex justify-center items-center">
                 <div className="max-w-2xl mx-auto mt-10 mb-20 relative z-10">
                     <h1 className="text-3xl text-center">🐱 XKCD Comic</h1>
-                    <Image src={comicData.img} alt={comicData.alt} className="mt-4 mb-4 mx-auto"/>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={comicData.img} alt={comicData.alt} className="mt-4 mb-4 mx-auto"/>
                     <h2 className="text-xl text-center">{comicData.safe_title}</h2>
                     <p className="text-gray-700 text-center">Published on: {formattedDate}</p>
                 </div>

@@ -12,7 +12,9 @@ export default function Header() {
                     <Link href="/contacts">Contact</Link>
                     <Link href="/comic">Comic</Link>
                 </nav>
-                <Image src={"myphoto.png"} alt="My photo" className="absolute top-0 left-20 hidden sm:block sm:h-28 md:h-36" />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={"myphoto.png"} alt="My photo"
+                       className="absolute top-0 left-20 hidden sm:block sm:h-28 md:h-36"/>
             </div>
         </header>
     );
